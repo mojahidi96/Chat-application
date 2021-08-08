@@ -9,5 +9,6 @@ import { Point } from '../chat/shared/model/location';
 })
 export class MapComponent {
   @Input() location: Point;
+  isFullScreen = false;
   googleMapType = 'satellite';
 }

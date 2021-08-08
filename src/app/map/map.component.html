@@ -1,3 +1,13 @@
-<agm-map [latitude]='location?.latitude' [longitude]='location?.longitude' [mapTypeId]='googleMapType'>
-    <agm-marker [latitude]="location?.latitude" [longitude]="location?.longitude"></agm-marker>
-</agm-map>
+<mat-card class="map-card" [ngClass]="isFullScreen?'full-scr':'map-card'">
+    <mat-card-content>
+        <agm-map [ngClass]="isFullScreen?'full-scr-map':'map'" [latitude]='location?.latitude'
+            [longitude]='location?.longitude' [mapTypeId]='googleMapType'>
+            <agm-marker [latitude]="location?.latitude" [longitude]="location?.longitude"></agm-marker>
+        </agm-map>
+    </mat-card-content>
+    <mat-card-actions>
+        <button class="right" mat-button (click)="isFullScreen = !isFullScreen">
+            <mat-icon>{{isFullScreen? 'fullscreen_exit':'fullscreen'}}</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>

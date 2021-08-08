@@ -1,4 +1,31 @@
-agm-map{
-    height: 200px;
+.map{
+    height: 180px;
     width: 200px;
+}
+
+.map-card{
+    height: 210px;
+    width: 200px;
+}
+
+.full-scr-map{
+    height: 46vh;
+    width: 89vw;
+}
+
+.full-scr{
+    height: 50vh;
+    width: 89vw;
+}
+
+.map-card {
+    margin-top: 58vh !important;
+  }
+
+  .mat-card-actions, .mat-card-subtitle, .mat-card-content {
+    margin-bottom: 0px;
+}
+
+.right{
+    float: right;
 }

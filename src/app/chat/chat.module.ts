@@ -22,7 +22,7 @@ import { AvatarModule } from 'ngx-avatar';
     MaterialModule,
     AvatarModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDojjdN0uEWCAlXDmyv5L2KyVvgibCsKrg'
+      apiKey: 'API_KEY'
     })
   ],
   declarations: [ChatComponent, DialogUserComponent, MapComponent],

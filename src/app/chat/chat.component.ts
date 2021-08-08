@@ -193,17 +193,8 @@ export class ChatComponent implements OnInit, AfterViewInit {
     this.translate.use(language);
   }
 
-  onFileSelected() {
-    const inputNode: any = document.querySelector('#file');
-  
-    if (typeof (FileReader) !== 'undefined') {
-      const reader = new FileReader();
-  
-      reader.onload = (e: any) => {
-       console.log(e.target.result);
-      };
-  
-      reader.readAsArrayBuffer(inputNode.files[0]);
-    }
+  onFileSelected(event) {
+    console.log(event.target.files[0])
+    // /upload-profile-pic
   }
 }
